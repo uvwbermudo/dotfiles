@@ -4,3 +4,6 @@
 [submodule ".oh-my-bash"]
 	path = .oh-my-bash
 	url = https://github.com/ohmybash/oh-my-bash.git
+[submodule ".config/wezterm"]
+	path = .config/wezterm
+	url = git@github.com:uvwbermudo/wezterm-config.git
