@@ -165,6 +165,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias clear='clear && fastfetch'
 
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -175,3 +176,5 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
+
+fastfetch
