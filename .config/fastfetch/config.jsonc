@@ -8,7 +8,7 @@
         },
         {
             "type": "custom",
-            "format": "\u001b[90m┌───────────────────────────────────────┐"
+            "format": "\u001b[90m┌─────────────────────────────────────────┐"
         },
         {
             "type": "os",
@@ -28,21 +28,14 @@
             "keyColor": "yellow"
         },
         {
+            "type": "host",
+            "key": "   \uf233 Host ",
+            "keyColor": "yellow"
+        },
+        {
             "type": "packages",
             "key": "   \uf487 Packages ",
             "keyColor": "blue"
-        },
-        {
-            "type": "cpu",
-            "key": "   \uf4bc CPU ",
-            "format": "{1}",
-            "keyColor": "green"
-        },
-        {
-            "type": "gpu",
-            "key": "   \udb82\udf82 GPU ",
-            "format" : "{2}",
-            "keyColor": "green"
         },
         {
             "type": "memory",
@@ -62,7 +55,7 @@
         },  
         {
             "type": "custom",
-            "format": "\u001b[90m└───────────────────────────────────────┘"
+            "format": "\u001b[90m└─────────────────────────────────────────┘"
         },
         {
             "type": "colors",
