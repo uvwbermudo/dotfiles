@@ -6,11 +6,22 @@
             "type": "string"
         }
     },
+    "logo": {
+        "type": "kitty-direct",
+        "source": "~/.config/fastfetch/waifu.png",
+        "width": 40,
+        "height": 20,
+        "preserveAspectRatio": false
+    },
     "modules": [
         {
             "type": "title",
             "key": "\uf007",
-            "format": "{6}"
+            "color": {
+                "user": "#b6b6b9"
+            },
+            "format": "{6}",
+            "keyColor": "#b6b6b9",
         },
         {
             "type": "custom",
@@ -20,47 +31,56 @@
             "type": "os",
             "key": "\udb80\udf3d os     ",
             "format": "{3}",
-            "keyColor": "red"
+            "keyColor": "#8f9691",
+            "outputColor": "#b6b6b9"
         },
         {
             "type": "kernel",
             "key": "\udb81\ude84 kernel ",
             "format": "{2}",
-            "keyColor": "red"
+            "keyColor": "#b6b6b9",
+            "outputColor": "#7a7d80"
+
         },
         {
             "type": "shell",
             "key": "\uf120 shell  ",
-            "keyColor": "yellow"
+            "outputColor": "#7a7d80",
+            "keyColor": "#b6b6b9"
         },
         {
             "type": "title",
             "key": "\uf233 hname  ",
-            "keyColor": "yellow",
+            "outputColor": "#b6b6b9",
+            "keyColor": "#6e706f",
             "format": "{2}"
         },
         {
             "type": "packages",
             "key": "\uf487 pkgs   ",
-            "keyColor": "blue",
+            "keyColor": "#8f9691",
+            "outputColor": "#7a7d80",
             "format": "{1}"
         },
         {
             "type": "memory",
             "key": "\udb80\udf5b memory ",
-            "keyColor": "green",
+            "keyColor": "#6e706f",
+            "outputColor": "#b6b6b9",
             "format": "{1} | {2}"
         },
         {
             "type": "command",
             "key": "\uf4e3 os_age ",
-            "keyColor": "magenta",
+            "keyColor": "#b6b6b9",
+            "outputColor": "#7a7d80",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
             "key": "\udb82\udd96 uptime ",
-            "keyColor": "magenta",
+            "keyColor": "#8f9691",
+            "outputColor": "#8f9691",
             "format": "{1} days, {2} hours"
         },  
         // {
