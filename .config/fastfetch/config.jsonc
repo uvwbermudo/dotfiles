@@ -1,65 +1,77 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "display": {
+        "separator": " ",
+        "key": {
+            "type": "string"
+        }
+    },
     "modules": [
         {
             "type": "title",
-            "key": "   \uf007 ",
-            "format": "{6}{7}{8}"
+            "key": "\uf007",
+            "format": "{6}"
         },
         {
             "type": "custom",
-            "format": "\u001b[90m┌─────────────────────────────────────────┐"
+            "format": "-------------"
         },
         {
             "type": "os",
-            "key": "   \udb81\udd48 OS",
+            "key": "\udb80\udf3d os     ",
             "format": "{3}",
             "keyColor": "red"
         },
         {
             "type": "kernel",
-            "key": "   \udb81\ude84 Kernel ",
-            "format": "{1}",
+            "key": "\udb81\ude84 kernel ",
+            "format": "{2}",
             "keyColor": "red"
         },
         {
             "type": "shell",
-            "key": "   \uf120 Shell ",
+            "key": "\uf120 shell  ",
             "keyColor": "yellow"
         },
         {
-            "type": "host",
-            "key": "   \uf233 Host ",
-            "keyColor": "yellow"
+            "type": "title",
+            "key": "\uf233 hname  ",
+            "keyColor": "yellow",
+            "format": "{2}"
         },
         {
             "type": "packages",
-            "key": "   \uf487 Packages ",
-            "keyColor": "blue"
+            "key": "\uf487 pkgs   ",
+            "keyColor": "blue",
+            "format": "{1}"
         },
         {
             "type": "memory",
-            "key": "   \udb80\udf5b Memory ",
-            "keyColor": "green"
+            "key": "\udb80\udf5b memory ",
+            "keyColor": "green",
+            "format": "{1} | {2}"
         },
         {
             "type": "command",
-            "key": "   \uf4e3 OS Age ",
+            "key": "\uf4e3 os_age ",
             "keyColor": "magenta",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
-            "key": "   \udb82\udd96 Uptime ",
-            "keyColor": "magenta"
+            "key": "\udb82\udd96 uptime ",
+            "keyColor": "magenta",
+            "format": "{1} days, {2} hours"
         },  
+        // {
+        //     "type": "custom",
+        //     "format": "\u001b[90m─────────────────────────────────────────"
+        // },
         {
-            "type": "custom",
-            "format": "\u001b[90m└─────────────────────────────────────────┘"
+            "type": "break"
         },
         {
             "type": "colors",
-            "paddingLeft": 2,
             "symbol": "circle"
         }
  
